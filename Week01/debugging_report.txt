@@ -1,0 +1,5 @@
+In the buggy code, I encountered 2 main issues. First, radius is spelled incorrectly in the area equation. (radius -> radious). Second, disp was used incorrectly. To correctly use disp I did one line printing the text "The area of the circle is: " and the line below displayed the value of our area. However, the original disp line resembled the format you would use if you did fprintf (which I included as well).
+
+I mainly referred to my functions_exploration.m file to get my notation / syntax correct. I consulted ChatGPT when it came to displaying the 2 decimal places when I did my fprintf line so I can display 78.54 instead of 7.853982e+01.
+
+Overall, I learned the importance of proper spelling and syntax when it comes to displaying our solution.

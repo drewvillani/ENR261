@@ -1,0 +1,29 @@
+fprintf
+> Prints formatted text with the ability to include variables within the text
+
+>> x = 241.0042 ,	
+>> fprintf ('I am %d months old\n', x)
+	- "%d" is a placeholder for an integer, and ", x" is the variable that's plugged in, \n is basically an 	  "enter" button in the command prompt, allowing us to start at the next new line
+
+plot
+> Create 2D plot of data / variables we input
+
+>> x = 0:1:10;
+>> y = cos(x);
+>> plot(x,y);
+>> grid on;
+>> title('cos(x)');
+	- x values from 0-10 with the step of 1
+	- y value is the cosine of x
+	- plot our x and y onto a 2D graph
+	- turn the visual grid on so we can better visualize our data
+	- title adds formatted text to our graph labeling it as 'cos(x)'
+
+
+disp
+> Displays a simple inputted message or variable value
+
+>> x = 3.14
+>> disp(x)
+	- Displays "3.14", x's value
+

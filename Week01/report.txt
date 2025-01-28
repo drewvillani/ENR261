@@ -1,0 +1,29 @@
+
+Command Window
+	> Used to execute command inputs immediately
+		- Warnings are displayed instantly if present
+
+Editor
+	> Used to write scripts and functions. There is line numbering present
+		- Uses syntax
+		- Warning status icon found on the right side
+
+Current Folder
+	> Displays the folders that are being worked in & the files in the folders
+		- Can quickly navigate between folders and files, rename, and even delete
+
+Details
+	> Displays the details of the selected file within the "Current Folder" component
+
+Workspace
+	> Displays all relevant variables with details including name and value
+
+Ribbon
+	> Houses 6 tabs full of tools and commands
+		- Home : file operation, workspace and data management, Simulink, layout
+		- Plots : used for data visualization / plotting variables on different graphs
+		- Apps : allows installation and operation of additional MATLAB apps like Data Cleaner & Profiler
+		- Editor : file creation and export, analysis tools, allows you to run code
+		- Publish : font and text management and organization, image importing
+		- View : workflow management, display management, spell checking
+
