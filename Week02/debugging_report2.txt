@@ -1,0 +1,5 @@
+Drew Villani - debugging report
+
+In the buggy script the element-wise multiplication replaced the normal multiplication allowing for each individual item's price to multiply to its corresponding quantity.
+
+Added another value to the item quantities (now 4 total), we had 3 quantities but 4 prices.
