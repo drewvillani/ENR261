@@ -1,0 +1,6 @@
+debuggingReport3
+
+Drew Villani
+
+1. Moved sum_even outside of the if loop
+2. Added i = i + 2 to avoid infinite loop
