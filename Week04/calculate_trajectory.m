@@ -3,23 +3,23 @@
 clear
 clc
 
-% user inputs
+% Get user inputs
 v0 = input('Enter initial velocity (in m/s): ');
 y0 = input('Enter initial height (in m): ');
 guess_angle = input('Enter your guess for the optimal angle (in degrees): ');
 
-% gravity constant
+% Define gravity
 g = 9.81;
 
-% optimal angle and maximum range
+% Compute the optimal angle and maximum range
 [optimal_angle, max_range] = getOptimalTrajectoryAngle(v0, y0, g);
 
-% trajectories for guessed and optimal angles
+% Compute the trajectories for guessed and optimal angles
 numValues = 100;
 [x_guess, y_guess, ~] = calculateTrajectory(v0, guess_angle, g, y0, numValues);
 [x_optimal, y_optimal, ~] = calculateTrajectory(v0, optimal_angle, g, y0, numValues);
 
-% plot traj
+% Plot the trajectories
 figure;
 plot(x_guess, y_guess, 'r', x_optimal, y_optimal, 'b');
 xlabel('Distance (m)');
@@ -28,7 +28,7 @@ title('Projectile Motion Comparison');
 legend('Guessed Angle', 'Optimal Angle');
 grid on;
 
-% disp results
+% Display results in command window
 fprintf('Optimal launch angle: %.2f degrees\n', optimal_angle);
 fprintf('Maximum range: %.2f meters\n', max_range);
 fprintf('Your guess was off by %.2f degrees.\n', abs(optimal_angle - guess_angle));
@@ -65,13 +65,13 @@ function [x, y, time] = calculateTrajectory(v0, angle, g, y0, numValues)
     vx = v0 * cos(theta);
     vy = v0 * sin(theta);
     
-    % computing total flight time
+    % Compute total flight time using quadratic equation
     total_time = (vy + sqrt(vy^2 + 2 * g * y0)) / g;
     
-    % time array
+    % Create time array from 0 to total_time with numValues points
     time = linspace(0, total_time, numValues);
-     
-    % x and y positions overtime
+    
+    % Compute x and y positions over time
     x = vx * time;
     y = y0 + vy * time - 0.5 * g * time.^2;
 
@@ -92,3 +92,5 @@ function [x, y, time] = calculateTrajectory(v0, angle, g, y0, numValues)
 
    
 end
+
+% issue with graph ; couldn't figure out how to make my plotted line dotted
