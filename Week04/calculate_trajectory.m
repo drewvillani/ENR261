@@ -3,23 +3,23 @@
 clear
 clc
 
-% Get user inputs
+% inputs
 v0 = input('Enter initial velocity (in m/s): ');
 y0 = input('Enter initial height (in m): ');
 guess_angle = input('Enter your guess for the optimal angle (in degrees): ');
 
-% Define gravity
+% gravity
 g = 9.81;
 
-% Compute the optimal angle and maximum range
+% optimal angle, max range
 [optimal_angle, max_range] = getOptimalTrajectoryAngle(v0, y0, g);
 
-% Compute the trajectories for guessed and optimal angles
+% trajectories
 numValues = 100;
 [x_guess, y_guess, ~] = calculateTrajectory(v0, guess_angle, g, y0, numValues);
 [x_optimal, y_optimal, ~] = calculateTrajectory(v0, optimal_angle, g, y0, numValues);
 
-% Plot the trajectories
+% plot - trajectories
 figure;
 plot(x_guess, y_guess, 'r', x_optimal, y_optimal, 'b');
 xlabel('Distance (m)');
@@ -28,7 +28,7 @@ title('Projectile Motion Comparison');
 legend('Guessed Angle', 'Optimal Angle');
 grid on;
 
-% Display results in command window
+% disp results
 fprintf('Optimal launch angle: %.2f degrees\n', optimal_angle);
 fprintf('Maximum range: %.2f meters\n', max_range);
 fprintf('Your guess was off by %.2f degrees.\n', abs(optimal_angle - guess_angle));
@@ -41,14 +41,14 @@ function [optimal_angle, max_range] = getOptimalTrajectoryAngle(v0, y0, gravity)
         
         theta = deg2rad(angle);
         
-        % Compute horizontal velocity component
+        % horizontal v
         vx = v0 * cos(theta);
         vy = v0 * sin(theta);
         
-        % Compute range using projectile motion equation
+        % calculate range using projectile motion eq
         range = (vx / gravity) * (vy + sqrt(vy^2 + 2 * gravity * y0));
         
-        % Update maximum range and optimal angle if a new max is found
+        % change maximum range and optimal angle if a new max is found
         if range > max_range
             max_range = range;
             optimal_angle = angle;
@@ -61,17 +61,17 @@ function [x, y, time] = calculateTrajectory(v0, angle, g, y0, numValues)
     % Convert angle to radians
     theta = deg2rad(angle);
     
-    % Compute initial velocity components
+    % compute vi
     vx = v0 * cos(theta);
     vy = v0 * sin(theta);
     
-    % Compute total flight time using quadratic equation
+    % compute total flight time
     total_time = (vy + sqrt(vy^2 + 2 * g * y0)) / g;
     
-    % Create time array from 0 to total_time with numValues points
+    % time array from 0 to total_time with numValues as points
     time = linspace(0, total_time, numValues);
     
-    % Compute x and y positions over time
+    % x and y pos over time
     x = vx * time;
     y = y0 + vy * time - 0.5 * g * time.^2;
 
