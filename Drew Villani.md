@@ -50,18 +50,24 @@
     * [x] Report (`debuggingReport3.txt`) summarizing errors and solutions.
 
 ### Week 4: Program Design and File Import/Export
+Grading Note:
+* Your functions are all named incorrectly based on the functions you are calling
+* Your functions are not technically functions because you're including code before the function declaration
+* Your code includes assertions and I'm not exactly sure why, that is for testing and we haven't covered assertions
+* Only the KitchenInventory file runs and it fails on every command except `exit` due to function name issues.
+
 1. Optimizing Projectile Launch Angle:
-    * [ ] Functions (`calculateTrajectory.m`, `getOptimalTrajectoryAngle.m`) for trajectory and optimal angle calculations.
-    * [ ] Script file (`projectileComparison.m`) integrating the functions.
+    * [0] Functions (`calculateTrajectory.m`, `getOptimalTrajectoryAngle.m`) for trajectory and optimal angle calculations.
+    * [0] Script file (`projectileComparison.m`) integrating the functions.
 2. Gear Ratio Calculator:
-    * [ ] Function (`gearRatioCalc.m`) calculating gear ratios.
-    * [ ] Script file (`processGearRatios.m`) reading/writing CSV files.
+    * [0] Function (`gearRatioCalc.m`) calculating gear ratios.
+    * [0] Script file (`processGearRatios.m`) reading/writing CSV files.
 3. Kitchen Inventory Manager:
     * Functions:
-        * [ ] `addItemToStock.m`
-        * [ ] `getStockQty.m`
-        * [ ] `getInventoryList.m`
-    * [ ] Script file (`kitchenInventory.m`) for user interaction and inventory management.
+        * [0] `addItemToStock.m`
+        * [0] `getStockQty.m`
+        * [0] `getInventoryList.m`
+    * [10] Script file (`kitchenInventory.m`) for user interaction and inventory management.
 
 ### Week 5: Vectors, Matrices, and Logical Operations
 1. Material Strength Filter Tool:
