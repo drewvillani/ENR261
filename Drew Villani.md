@@ -70,6 +70,7 @@ Grading Note:
     * [10] Script file (`kitchenInventory.m`) for user interaction and inventory management.
 
 ### Week 5: Vectors, Matrices, and Logical Operations
+**These need to be fixed, remove testing, etc, before I can grade them**
 1. Material Strength Filter Tool:
     * [ ] Function (`filterMaterials.m`) filtering materials based on logical conditions.
     * [ ] Script file (`materialSelector.m`) for user interaction.
