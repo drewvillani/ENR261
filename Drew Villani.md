@@ -88,8 +88,7 @@ Grading Note:
         * NOTE: These are not presented as expected, they should be separate files, one function, one script
 2. Inventory Forecasting Tool:
     * [x] Function (`inventoryForecast.m`) analyzing usage logs and predicting inventory levels.
-    * [0] Script file (`runInventoryForecast.m`) integrating analysis and plotting.
-        * Missing
+    * [x] Script file (`runInventoryForecast.m`) integrating analysis and plotting.
 3. Projectile Motion Analysis:
     * [0] Function (`projectileMotionWithKeyPoints.m`) simulating motion and marking key points.
         * Fails to run, should be a function but is a script file
