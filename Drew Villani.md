@@ -83,14 +83,17 @@ Grading Note:
 
 ### Week 6: Advanced Functions and Plotting
 1. Stress-Strain Curve Fitting:
-    * [ ] Function (`fitStressStrainCurve.m`) fitting polynomial models.
-    * [ ] Script file (`stressStrainAnalyzer.m`) for user interaction and plotting.
+    * [x] Function (`fitStressStrainCurve.m`) fitting polynomial models.
+    * [x] Script file (`stressStrainAnalyzer.m`) for user interaction and plotting.
+        * NOTE: These are not presented as expected, they should be separate files, one function, one script
 2. Inventory Forecasting Tool:
-    * [ ] Function (`inventoryForecast.m`) analyzing usage logs and predicting inventory levels.
-    * [ ] Script file (`runInventoryForecast.m`) integrating analysis and plotting.
+    * [x] Function (`inventoryForecast.m`) analyzing usage logs and predicting inventory levels.
+    * [0] Script file (`runInventoryForecast.m`) integrating analysis and plotting.
+        * Missing
 3. Projectile Motion Analysis:
-    * [ ] Function (`projectileMotionWithKeyPoints.m`) simulating motion and marking key points.
-    * [ ] Script file (`runProjectileMotion.m`) for user interaction and plotting.
+    * [0] Function (`projectileMotionWithKeyPoints.m`) simulating motion and marking key points.
+        * Fails to run, should be a function but is a script file
+    * [x] Script file (`runProjectileMotion.m`) for user interaction and plotting.
 
 ### Week 7: Advanced Data Types
 1. Component Database Management:
