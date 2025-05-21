@@ -1,9 +1,9 @@
 # Quiz - 30%
-### Grade: 
+### Grade: 100
 
 ---
 # Homework - 40%
-### Grade:
+### Grade: 38.15
 
 ---
 ### Week 1: Introduction to MATLAB
@@ -43,8 +43,7 @@
 2. Ingredient Cost Calculator:
     * [x] Script file (`ingredient_cost.m`) that calculates total ingredient costs with a while loop.
 3. Ball Drop Simulation:
-    * [75] Script file (`ball_drop.m`) simulating a free-fall motion using a while loop.
-        * The ball is dropping too fast, check your formula
+    * [x] Script file (`ball_drop.m`) simulating a free-fall motion using a while loop.
 4. Bug Hunt Challenge:
     * [x] Fixed script file (`fixed_script3.m`) with comments explaining fixes.
     * [x] Report (`debuggingReport3.txt`) summarizing errors and solutions.
@@ -97,52 +96,52 @@ Grading Note:
 ### Week 7: Advanced Data Types
 1. Component Database Management:
     * Functions:
-        * [ ] `addComponent.m`
-        * [ ] `struct2Table.m`
-    * [ ] Script file (`componentDatabase.m`) managing component data.
+        * [x] `addComponent.m`
+        * [x] `struct2Table.m`
+    * [x] Script file (`componentDatabase.m`) managing component data.
 2. Recipe Manager:
-    * [ ] Function (`updateInventory.m`) managing inventory.
-    * [ ] Script file (`recipeManager.m`) for recipe and inventory management.
+    * [0] Function (`updateInventory.m`) managing inventory.
+    * [0] Script file (`recipeManager.m`) for recipe and inventory management.
 3. Particle Simulation Analysis:
     * Functions:
-        * [ ] `simulateParticleMotion.m`
-        * [ ] `calculateAverageVelocity.m`
-    * [ ] Script file (`particleSimulation.m`) analyzing and plotting particle motion.
+        * [0] `simulateParticleMotion.m`
+        * [0] `calculateAverageVelocity.m`
+    * [0] Script file (`particleSimulation.m`) analyzing and plotting particle motion.
 
 ### Week 8: Bye Week
 1. N/A
 
 ### Week 9: MATLAB App Designer and Symbolic Math
-1. [ ] Function Plotter with Symbolic Expressions
-2. [ ] Symbolic Differentiation and Integration App
-3. ~~[] Symbolic Fourier Series Visualizer~~
+1. [x] Function Plotter with Symbolic Expressions
+2. [x] Symbolic Differentiation and Integration App
+3. [x] Unit Converter App
 
 ### Week 10: PID Control and Algorithm Analysis
 1. Spring-Damping System:
-    * [ ] App (`SpringDampingPID.mlapp`) simulating a spring-damping system with PID control.
+    * [0] App (`SpringDampingPID.mlapp`) simulating a spring-damping system with PID control.
 2. Line-Following Robot:
-    * [ ] App (`LineFollowingPID.mlapp`) simulating a robot with PID control for line-following.
+    * [0] App (`LineFollowingPID.mlapp`) simulating a robot with PID control for line-following.
 3. Custom Algorithm Comparison:
-    * [ ] App (`CustomAlgorithmComparison.mlapp`) comparing algorithms or parameter effects.
-    * [ ] Write-up explaining observations and insights.
+    * [0] App (`CustomAlgorithmComparison.mlapp`) comparing algorithms or parameter effects.
+    * [0] Write-up explaining observations and insights.
 
 ### Week 11: Multitasking in Single-Threaded Environments
 1. Blinking LED with pause:
-    * [ ] App (`blinkWithDelay.mlapp`) using pause to control LED blinking.
+    * [0] App (`blinkWithDelay.mlapp`) using pause to control LED blinking.
 2. Blinking LED without pause:
-    * [ ] App (`blinkNoDelay.mlapp`) using non-blocking timing for LED blinking.
+    * [0] App (`blinkNoDelay.mlapp`) using non-blocking timing for LED blinking.
 3. Dynamic GUI Dashboard:
-    * [ ] App (`crazyDashboard.mlapp`) with multiple components updating independently.
+    * [0] App (`crazyDashboard.mlapp`) with multiple components updating independently.
 4. PID Line-Following Simulator:
-    * [ ] App (`pidSimulator.mlapp`) simulating a line-following robot with PID control.
+    * [0] App (`pidSimulator.mlapp`) simulating a line-following robot with PID control.
 
 ### Week 12: Simulink Tutorial
-1. [ ] Tutorial 1
-2. [ ] Tutorial 2
-3. [ ] Tutorial 3
-4. [ ] Tutorial 4
-5. [ ] Tutorial 5
-6. [ ] Tutorial 6
+1. [x] Tutorial 1
+2. [x] Tutorial 2
+3. [0] Tutorial 3
+4. [0] Tutorial 4
+5. [0] Tutorial 5
+6. [0] Tutorial 6
 * [ ] Extra Credit 1 (worth 2 assignments)
 * [ ] Extra Credit 2 (worth 4 assignments)
 * [ ] Extra Credit 3 (worth 6 assignments)
@@ -167,8 +166,8 @@ Grading Note:
 
 ---
 # Final Project - 30%
-### Grade:
+### Grade: 0
 
 ---
 # Final Grade
-### 
+### 45.26
