@@ -12,14 +12,12 @@ function [optimal_angle, max_range] = getOptimalTrajectoryAngle(v0, y0, gravity)
         
         theta = deg2rad(angle);
         
-        % Compute horizontal velocity component
+        % calculate velocities
         vx = v0 * cos(theta);
-        vy = v0 * sin(theta);
-        
-        % Compute range using projectile motion equation
-        range = (vx / gravity) * (vy + sqrt(vy^2 + 2 * gravity * y0));
-        
-        % Update maximum range and optimal angle if a new max is found
+        vy = v0 * sin(theta);        
+        % calculate range
+        range = (vx / gravity) * (vy + sqrt(vy^2 + 2 * gravity * y0));     
+        % update the max and optimal
         if range > max_range
             max_range = range;
             optimal_angle = angle;

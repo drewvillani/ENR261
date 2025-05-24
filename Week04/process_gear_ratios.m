@@ -1,29 +1,28 @@
 % Drew Villani
 
-clear
-clc
+function processGearRatios(inputFile)
+    % read the csv
+    gearData = readtable(inputFile);
+    gearRatios = zeros(height(gearData), 1);
+    
+    for i = 1:height(gearData)
+        % use the driver/driven teeth from the relevant row
+        driverTeeth = gearData.driverTeeth(i); 
+        drivenTeeth = gearData.drivenTeeth(i);  
+        
+        % gear ratio calculation
+        gearRatios(i) = gearRatioCalc(driverTeeth, drivenTeeth);
+    end   
+    % create new column, write table for output
+    gearData.gearRatio = gearRatios;
+    outputFile = 'gear_ratios.csv';
+    writetable(gearData, outputFile);
+    
+    disp('Gear ratios have been calculated and saved to gear_ratios.csv');
+end
 
-%  input and output CSV file
 inputFile = 'gear_data.csv';
-outputFile = 'gear_ratios_output.csv';
 
-% error if the file doesnt exist (used ai for this)
-if ~isfile(inputFile)
-    error('Error: %s not found.', inputFile);
-end
-
-% read file -> table
-data = readtable(inputFile);
-
-% error if the columns dont exist in input file (used ai for this)
-if ~all(ismember({'driverTeeth', 'drivenTeeth'}, data.Properties.VariableNames))
-    error('Error: Input CSV file must contain "driverTeeth" and "drivenTeeth" columns.');
-end
-
-% Compute gear ratios for each row
-data.gearRatio = arrayfun(@gearRatioCalc, data.driverTeeth, data.drivenTeeth);
-
-% Write the updated data to a new CSV file
-writetable(data, outputFile);
-
-fprintf('Gear ratios successfully calculated and saved to %s\n', outputFile);
+%-----------------------------------
+% run the function
+processGearRatios(inputFile);

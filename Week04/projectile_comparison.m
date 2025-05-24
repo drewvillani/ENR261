@@ -1,41 +1,37 @@
 % Drew Villani
-% projectile comparison function
 
-clear
-clc
+clc;
+clear;
 
-function [x, y, time] = calculateTrajectory(v0, angle, g, y0, numValues)
-    % Convert angle to radians
-    theta = deg2rad(angle);
-    
-    % Compute initial velocity components
-    vx = v0 * cos(theta);
-    vy = v0 * sin(theta);
-    
-    % Compute total flight time using quadratic equation
-    total_time = (vy + sqrt(vy^2 + 2 * g * y0)) / g;
-    
-    % Create time array from 0 to total_time with numValues points
-    time = linspace(0, total_time, numValues);
-    
-    % Compute x and y positions over time
-    x = vx * time;
-    y = y0 + vy * time - 0.5 * g * time.^2;
+% userinput
+v0 = input('Enter the initial velocity (in m/s): ');
+y0 = input('Enter the initial height (in meters): ');
+guess = input('Enter your guess for the optimal angle (in degrees): ');
 
-    % asserts - time
-    assert(all(time >= 0), 'Error: Time values must be non-negative');
-    assert(issorted(time), 'Error: Time values must be increasing');
+g = 9.81;  % m/s^2
 
-    % asserts - horizontal position
-    assert(all(x >= 0), 'Error: Horizontal position values must be non-negative');
+%  optimal angle calculation using v0 y0 and g
+[optimal_angle, max_range] = getOptimalTrajectoryAngle(v0, y0, g);
+fprintf('Optimal launch angle: %.2f degrees\n', optimal_angle);
+fprintf('Maximum range: %.2f meters\n', max_range);
 
-    % asserts - initial vertical position
-    assert(y(1) >= 0, 'Error: Initial vertical position must be greater or equal to 0');
-    assert(all(y > 0), 'Error: Vertical position values must be non-negative');
+% trajectory for optimal and guessed angles
+numValues = 100; 
+[x_optimal, y_optimal, time_optimal] = calculate_trajectory(v0, optimal_angle, g, y0, numValues);
+[x_guess, y_guess, time_guess] = calculate_trajectory(v0, guess, g, y0, numValues);
 
-    % asserts - final y
-    assert(abs(y(end)) < 1e-6, 'Error: Final y value must be close to 0');
+% plot. green = optimal, red = guessed
+%---------------------------------------------------------
+figure;
+plot(x_optimal, y_optimal, 'g', 'DisplayName', 'Optimal Angle');  
+hold on;
+plot(x_guess, y_guess, 'r', 'DisplayName', 'Guessed Angle');  
+xlabel('Distance (m)');
+ylabel('Height (m)');
+title('Projectile Trajectories');
+legend;
+grid on;
+%---------------------------------------------------------
 
-
-   
-end
+% display the difference
+fprintf('Assumed angle was off by %.2f degrees.\n', abs(guess - optimal_angle));
