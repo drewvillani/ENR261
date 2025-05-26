@@ -3,7 +3,7 @@
 
 ---
 # Homework - 40%
-### Grade: 38.15
+### Grade: 94.65
 
 ---
 ### Week 1: Introduction to MATLAB
@@ -65,20 +65,27 @@ Grading Note:
     * Functions:
         * [0] `addItemToStock.m`
         * [0] `getStockQty.m`
-        * [0] `getInventoryList.m`
+        * [x] `getInventoryList.m`
+            * Missing, replaced with project grade
     * [10] Script file (`kitchenInventory.m`) for user interaction and inventory management.
 
 ### Week 5: Vectors, Matrices, and Logical Operations
 **These need to be fixed, remove testing, etc, before I can grade them**
 1. Material Strength Filter Tool:
-    * [ ] Function (`filterMaterials.m`) filtering materials based on logical conditions.
-    * [ ] Script file (`materialSelector.m`) for user interaction.
+    * [x] Function (`filterMaterials.m`) filtering materials based on logical conditions.
+        * Missing, replaced with extra credit 
+    * [x] Script file (`materialSelector.m`) for user interaction.
+        * Missing, replaced with extra credit
 2. Smart Inventory Alert System:
-    * [ ] Function (`getLowStockItems.m`) identifying low-stock items.
-    * [ ] Updated script (`kitchenInventory.m`) integrating low-stock alert functionality.
+    * [x] Function (`getLowStockItems.m`) identifying low-stock items.
+        * Missing, replaced with extra credit
+    * [x] Updated script (`kitchenInventory.m`) integrating low-stock alert functionality.
+        * Missing, replaced with extra credit
 3. Projectile Trajectory Analysis:
-    * [ ] Function (`analyzeTrajectories.m`) analyzing projectile data.
-    * [ ] Script file (`trajectoryAnalysis.m`) integrating analysis and plotting.
+    * [x] Function (`analyzeTrajectories.m`) analyzing projectile data.
+        * Missing, replaced with extra credit
+    * [x] Script file (`trajectoryAnalysis.m`) integrating analysis and plotting.
+        * Missing, replaced with extra credit
 
 ### Week 6: Advanced Functions and Plotting
 1. Stress-Strain Curve Fitting:
@@ -89,8 +96,8 @@ Grading Note:
     * [x] Function (`inventoryForecast.m`) analyzing usage logs and predicting inventory levels.
     * [x] Script file (`runInventoryForecast.m`) integrating analysis and plotting.
 3. Projectile Motion Analysis:
-    * [0] Function (`projectileMotionWithKeyPoints.m`) simulating motion and marking key points.
-        * Fails to run, should be a function but is a script file
+    * [x] Function (`projectileMotionWithKeyPoints.m`) simulating motion and marking key points.
+        * Fails to run, should be a function but is a script file, replaced with extra credit
     * [x] Script file (`runProjectileMotion.m`) for user interaction and plotting.
 
 ### Week 7: Advanced Data Types
@@ -100,13 +107,13 @@ Grading Note:
         * [x] `struct2Table.m`
     * [x] Script file (`componentDatabase.m`) managing component data.
 2. Recipe Manager:
-    * [0] Function (`updateInventory.m`) managing inventory.
-    * [0] Script file (`recipeManager.m`) for recipe and inventory management.
+    * [x] Function (`updateInventory.m`) managing inventory.
+    * [x] Script file (`recipeManager.m`) for recipe and inventory management.
 3. Particle Simulation Analysis:
     * Functions:
-        * [0] `simulateParticleMotion.m`
-        * [0] `calculateAverageVelocity.m`
-    * [0] Script file (`particleSimulation.m`) analyzing and plotting particle motion.
+        * [x] `simulateParticleMotion.m`
+        * [x] `calculateAverageVelocity.m`
+    * [x] Script file (`particleSimulation.m`) analyzing and plotting particle motion.
 
 ### Week 8: Bye Week
 1. N/A
@@ -118,33 +125,38 @@ Grading Note:
 
 ### Week 10: PID Control and Algorithm Analysis
 1. Spring-Damping System:
-    * [0] App (`SpringDampingPID.mlapp`) simulating a spring-damping system with PID control.
+    * [x] App (`SpringDampingPID.mlapp`) simulating a spring-damping system with PID control.
 2. Line-Following Robot:
-    * [0] App (`LineFollowingPID.mlapp`) simulating a robot with PID control for line-following.
+    * [x] App (`LineFollowingPID.mlapp`) simulating a robot with PID control for line-following.
 3. Custom Algorithm Comparison:
-    * [0] App (`CustomAlgorithmComparison.mlapp`) comparing algorithms or parameter effects.
-    * [0] Write-up explaining observations and insights.
+    * [x] App (`CustomAlgorithmComparison.mlapp`) comparing algorithms or parameter effects.
+        * Missing, replaced with extra credit
+    * [x] Write-up explaining observations and insights.
 
 ### Week 11: Multitasking in Single-Threaded Environments
 1. Blinking LED with pause:
-    * [0] App (`blinkWithDelay.mlapp`) using pause to control LED blinking.
+    * [x] App (`blinkWithDelay.mlapp`) using pause to control LED blinking.
+        * Missing, replaced with extra credit
 2. Blinking LED without pause:
-    * [0] App (`blinkNoDelay.mlapp`) using non-blocking timing for LED blinking.
+    * [x] App (`blinkNoDelay.mlapp`) using non-blocking timing for LED blinking.
+        * Missing, replaced with extra credit
 3. Dynamic GUI Dashboard:
-    * [0] App (`crazyDashboard.mlapp`) with multiple components updating independently.
+    * [x] App (`crazyDashboard.mlapp`) with multiple components updating independently.
+        * Missing, replaced with extra credit
 4. PID Line-Following Simulator:
-    * [0] App (`pidSimulator.mlapp`) simulating a line-following robot with PID control.
+    * [x] App (`pidSimulator.mlapp`) simulating a line-following robot with PID control.
+        * Missing, replaced with extra credit
 
 ### Week 12: Simulink Tutorial
 1. [x] Tutorial 1
 2. [x] Tutorial 2
-3. [0] Tutorial 3
-4. [0] Tutorial 4
-5. [0] Tutorial 5
-6. [0] Tutorial 6
-* [ ] Extra Credit 1 (worth 2 assignments)
-* [ ] Extra Credit 2 (worth 4 assignments)
-* [ ] Extra Credit 3 (worth 6 assignments)
+3. [x] Tutorial 3
+4. [x] Tutorial 4
+5. [x] Tutorial 5
+6. [x] Tutorial 6
+* [x] Extra Credit 1 (worth 2 assignments)
+* [x] Extra Credit 2 (worth 4 assignments)
+* [x] Extra Credit 3 (worth 6 assignments)
 
 ### General Grading Points
 1. Functionality:
@@ -166,8 +178,8 @@ Grading Note:
 
 ---
 # Final Project - 30%
-### Grade: 0
+### Grade: 100
 
 ---
 # Final Grade
-### 45.26
+### 97.86
